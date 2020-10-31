@@ -1,0 +1,40 @@
+{
+    "name":"Amazon S3 SDK Explorer",
+    "version":"1.0.0",
+    "slug":"s3sdkexplorer",
+    "location":"https://github.com/murpg/s3sdkexplorer/archive/master.zip",
+    "author":"George Murphy",
+    "homepage":"https://github.com/murpg/s3sdkexplorer",
+    "documentation":"https://github.com/murpg/s3sdkexplorer",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/murpg/s3sdkexplorer"
+    },
+    "bugs":"https://github.com/murpg/s3sdkexplorer/issues",
+    "shortDescription":"A nice explorer like module for S3 Buckets",
+    "type":"modules",
+    "license":[
+        {
+            "type":"Apache2",
+            "URL":"http://www.apache.org/licenses/LICENSE-2.0"
+        }
+    ],
+    "contributors":[
+        "George Murphy"
+    ],
+    "dependencies":{
+        "cbmessagebox": "^3.2.1",
+        "cbcommons": "^1.1.0"
+    },
+    "installPaths":{},
+    "ignore":[
+        "**/.*",
+        "test-harness",
+        "*/.md"
+    ],
+    "scripts":{
+        "toMaster":"recipe build/toMaster.boxr",
+        "format":"cfformat run models/**/*.cfc,test-harness/tests/**/*.cfc,*.cfc --overwrite",
+        "format:check":"cfformat check models/**/*.cfc,test-harness/tests/**/*.cfc,*.cfc"
+    }
+}
